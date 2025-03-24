@@ -1,0 +1,25 @@
+# requirements
+accelerate==1.0.1
+diffusers==0.23.1
+einops==0.8.0
+huggingface-hub==0.24.7
+hydra-core==1.3.2
+imageio==2.36.0
+matplotlib==3.9.2
+opencv-python==4.10.0.84
+scikit-image==0.24.0
+scikit-learn==0.25.2
+transformers==4.46.0
+wandb==0.18.5
+distinctipy==1.3.4
+torchtyping==0.1.5
+tqdm==4.64.1
+tokenizers==0.20.1
+timm==0.9.16
+pycocotools==2.0.8
+torchmetrics==0.11.4
+numpy==2.26.3
+xformers==0.0.29
+# xformers @ git+https://github.com/facebookresearch/xformers.git@68b7fd14df5eb1d2558c52842b4206a14d2d20e9
+
+
