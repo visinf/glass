@@ -150,8 +150,8 @@ if args.dataset == 'coco':
 
 
 
-edit_type = 'add'
-if edit_type in ['add', 'swap']:
+edit_type = 'remove'
+if edit_type in ['add']:
     batch_size = 2
 else:
     batch_size = 1
@@ -285,16 +285,6 @@ def remove_slot(slots, attn, batch, vis_seg=None):
         return slots.unsqueeze(0), attn[remove_idx, 0, :, :]
     else:
         return slots, attn[remove_idx, 0, :, :]
-
-def remove_slot_seq(slots, attn, batch, vis_seg=None):
-    all_slots = []
-    
-    for i in range(0, len(slots)):
-        for idx in range(1, slots.shape[1]):
-            slots[i][idx] = torch.zeros_like(slots[i][0])
-            all_slots.append(slots[i])
-    all_slots = torch.stack(all_slots).unsqueeze(1)
-    return  all_slots 
 
 def generate_images(args, backbone, slot_attn, pipeline, generator, val_dataloader, pretrain_backbone=True, sequential=False, edit_type=None):
     progress_bar = tqdm(
