@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://openaccess.thecvf.com/content/cvpr2025/papers/singh_glass_guided_latent_slot_diffusion_for_object-centric_learning_cvpr_2025_paper.pdf"><img src="https://img.shields.io/badge/CVPR-2025-blue"></a>
+  <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Singh_GLASS_Guided_Latent_Slot_Diffusion_for_Object-Centric_Learning_CVPR_2025_paper.pdf"><img src="https://img.shields.io/badge/CVPR-2025-blue"></a>
   <a href="https://arxiv.org/pdf/2407.17929"><img src="https://img.shields.io/badge/arXiv-2407.17929-b31b1b.svg"></a>
   <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache_2.0-green.svg"></a>
   <a href="https://visinf.github.io/glass/"><img src="https://img.shields.io/badge/Project-Page-ff69b4.svg"></a>
@@ -14,10 +14,10 @@
 
 <p align="center">
   <b>Official repository of the CVPR 2025 paper</b><br>
-  <a href="https://openaccess.thecvf.com/content/cvpr2025/papers/singh_glass_guided_latent_slot_diffusion_for_object-centric_learning_cvpr_2025_paper.pdf">
+  <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Singh_GLASS_Guided_Latent_Slot_Diffusion_for_Object-Centric_Learning_CVPR_2025_paper.pdf">
   GLASS: Guided Latent Slot Diffusion for Object-Centric Learning</a><br><br>
   <i>Krishnakant Singh, Simone Schaub-Meyer, and Stefan Roth</i><br>
-  <a href="https://visinf.tu-darmstadt.de/">Visual Inference Lab, TU Darmstadt</a>
+  <a href="https://www.visinf.tu-darmstadt.de/visual_inference/index.en.jsp">Visual Inference Lab, TU Darmstadt</a>
 </p>
 
 ---
@@ -25,19 +25,12 @@
 ## <img src="https://visinf.github.io/glass/static/images/favicon.png" width="22" valign="middle"> Overview
 
 **GLASS** introduces a diffusion-based framework for **object-centric representation learning**.  
-It integrates **slot attention** with a **guided latent diffusion decoder** to learn **compositional, interpretable slot representations** that generalize across visual tasks:
+It integrates **slot attention** with a **latent diffusion decoder** to learn **slot representations** that generalize across visual tasks:
 
 - 🧠 **Unsupervised Object Discovery**  
 - 🎨 **Image Generation & Reconstruction**  
-- <img src="https://visinf.github.io/glass/static/images/favicon.png" width="18" valign="middle"> **Compositional Image Editing & Inpainting**
+- <img src="https://visinf.github.io/glass/static/images/favicon.png" width="18" valign="middle"> **Compositional Image Generation**
 
----
-
-## 🧭 Quick Links
-
-📄 [**Paper**](https://openaccess.thecvf.com/content/cvpr2025/papers/singh_glass_guided_latent_slot_diffusion_for_object-centric_learning_cvpr_2025_paper.pdf) | 🌐 [**Project Page**](https://visinf.github.io/glass/) | 📚 [**arXiv**](https://arxiv.org/pdf/2407.17929) | 🎥 [**Video**](https://youtube.com/watch?v=n7JCtkmxP3A)
-
----
 
 <details>
 <summary><b>🔧 Dependencies</b></summary>
@@ -98,7 +91,7 @@ This would create file ```metrics_coco.json``` file in the checkpoint folder.
 bash ./src/eval/scripts/coco/eval_generation.sh
 ```
 
-### <img src="https://visinf.github.io/glass/static/images/favicon.png" width="18" valign="middle"> Compositional Editing
+### <img src="https://visinf.github.io/glass/static/images/favicon.png" width="18" valign="middle"> Compositional Generation 
 
 We provide a very crude implementation for generation compositional images. 
 
@@ -108,7 +101,7 @@ bash ./src/eval/scripts/coco/eval_composition.sh
 
 ---
 
-## 🧠 TODO
+## 📌 TODO
 
 - [ ] Release full training pipeline  
 
@@ -132,7 +125,7 @@ If you find this repository useful, please consider citing:
 ## 🙏 Acknowledgements
 
 This repository builds upon  
-**[LSD: Latent Slot Diffusion](https://github.com/JindongJiang/latent-slot-diffusion)**  and [Dataset Diffusion](https://github.com/VinAIResearch/Dataset-Diffusion).
+**[LSD: Latent Slot Diffusion](https://github.com/JindongJiang/latent-slot-diffusion)**  and **[Dataset Diffusion](https://github.com/VinAIResearch/Dataset-Diffusion)**.
 We thank the authors for open-sourcing their work.
 
 ---
